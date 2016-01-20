@@ -10,7 +10,7 @@ _This config is fresh and will likely evolve (don't worry, semver is our friend)
 ## Install
 
 ```console
-$ npm install eslint babel-eslint eslint-config-i-am-meticulous
+$ npm i -D eslint eslint-config-i-am-meticulous
 ```
 
 ## Usage
@@ -18,7 +18,9 @@ $ npm install eslint babel-eslint eslint-config-i-am-meticulous
 ### Notes
 
 - This config extends `eslint:recommended`.
-- You will need to adjust configuration syntax depending on your configuration location (`package.json` or `.eslintrc`).
+- You will need to adjust configuration syntax depending on your configuration
+  location (`package.json` or `.eslintrc`).
+- You might need to use ``babel-eslint`` if you use babel with fresh ES stages.
 
 ### Meticulous ES
 
@@ -37,7 +39,7 @@ Add to your eslint configuration (here, in `package.json`)
 To use the meticulous React rule set:
 
 ```console
-$ npm i eslint babel-eslint eslint-plugin-react eslint-config-i-am-meticulous
+$ npm i -D eslint eslint-plugin-react eslint-config-i-am-meticulous
 ```
 
 ```json
@@ -51,7 +53,7 @@ $ npm i eslint babel-eslint eslint-plugin-react eslint-config-i-am-meticulous
 ## I WANT EVERYTHING
 
 ```console
-$ npm i eslint babel-eslint eslint-plugin-react eslint-config-i-am-meticulous
+$ npm i -D eslint eslint-plugin-react eslint-config-i-am-meticulous
 ```
 
 ```json

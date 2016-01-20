@@ -2,9 +2,6 @@ module.exports = {
   // mostly good stuff
   "extends": "eslint:recommended",
 
-  // babel-eslint support more syntax stuff than eslint for now
-  "parser": "babel-eslint",
-
   "ecmaFeatures": {
     "modules": true,
     "experimentalObjectRestSpread": true,

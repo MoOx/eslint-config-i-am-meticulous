@@ -15,23 +15,11 @@
     "react.js"
   ],
   "devDependencies": {
-    "babel-core": "^6.3.26",
-    "babel-eslint": "^4.1.6",
-    "eslint": "^1.10.3",
-    "eslint-plugin-react": "^3.13.1"
-  },
-  "peerDependencies": {
-    "babel-eslint": "^4.1.6"
+    "eslint": "^1.10.3"
   },
   "scripts": {
     "lint": "eslint --fix src",
     "test": "npm run lint"
   },
-  "babel": {
-    "presets": [
-      "react",
-      "es2015",
-      "stage-0"
-    ]
   }
 }
