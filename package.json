@@ -12,7 +12,8 @@
   "main": "index.js",
   "files": [
     "index.js",
-    "react.js"
+    "react.js",
+    "es5.js"
   ],
   "devDependencies": {
     "eslint": "^1.10.3"

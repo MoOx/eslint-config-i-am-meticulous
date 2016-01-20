@@ -4,8 +4,7 @@
 
 [![Travis (Unix) Build Badge](https://img.shields.io/travis/MoOx/eslint-config-i-am-meticulous/master.svg?label=unix build)](https://travis-ci.org/MoOx/eslint-config-i-am-meticulous)
 
-_This config is fresh and will likely evolve (don't worry, semver is our friend)._  
-**If you have any question about a rule or want to discuss about it, please open an issue.**
+If you have any question about a rule or want to discuss about it, please open an issue.
 
 ## Install
 
@@ -22,7 +21,7 @@ $ npm i -D eslint eslint-config-i-am-meticulous
   location (`package.json` or `.eslintrc`).
 - You might need to use ``babel-eslint`` if you use babel with fresh ES stages.
 
-### Meticulous ES
+### Meticulous modern ES
 
 Add to your eslint configuration (here, in `package.json`)
 
@@ -36,7 +35,7 @@ Add to your eslint configuration (here, in `package.json`)
 
 ### React
 
-To use the meticulous React rule set:
+To use the meticulous React rule set (that extends the default one):
 
 ```console
 $ npm i -D eslint eslint-plugin-react eslint-config-i-am-meticulous
@@ -50,7 +49,9 @@ $ npm i -D eslint eslint-plugin-react eslint-config-i-am-meticulous
 }
 ```
 
-## I WANT EVERYTHING
+### Old ES5
+
+To use the meticulous ES5 rule set (that extends the default one):
 
 ```console
 $ npm i -D eslint eslint-plugin-react eslint-config-i-am-meticulous
@@ -59,10 +60,7 @@ $ npm i -D eslint eslint-plugin-react eslint-config-i-am-meticulous
 ```json
 {
   "eslintConfig": {
-    "extends": [
-      "eslint-config-i-am-meticulous",
-      "eslint-config-i-am-meticulous/react"
-    ]
+    "extends": "eslint-config-i-am-meticulous/es5"
   }
 }
 ```
