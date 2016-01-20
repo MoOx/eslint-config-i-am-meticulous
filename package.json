@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-i-am-meticulous",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "An ESLint shareable config for meticulous people.",
   "keywords": [
     "eslint",
@@ -16,13 +16,15 @@
     "es5.js"
   ],
   "devDependencies": {
-    "eslint": "^1.10.3"
+    "eslint": "^1.10.3",
+    "github-release-from-changelog": "^1.1.1",
+    "npmpub": "^2.0.0"
   },
   "scripts": {
     "lint": "eslint --fix .",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "release": "npmpublish && github-release-from-changelog"
   },
-
   "eslintConfig": {
     "extends": "./index.js"
   }
