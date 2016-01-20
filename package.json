@@ -19,8 +19,11 @@
     "eslint": "^1.10.3"
   },
   "scripts": {
-    "lint": "eslint --fix src",
+    "lint": "eslint --fix .",
     "test": "npm run lint"
   },
+
+  "eslintConfig": {
+    "extends": "./index.js"
   }
 }
