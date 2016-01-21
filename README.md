@@ -2,7 +2,7 @@
 
 > An ESLint shareable config for meticulous people.
 
-[![Travis (Unix) Build Badge](https://img.shields.io/travis/MoOx/eslint-config-i-am-meticulous/master.svg?label=unix build)](https://travis-ci.org/MoOx/eslint-config-i-am-meticulous)
+[![Travis (Unix) Build Badge](https://img.shields.io/travis/MoOx/eslint-config-i-am-meticulous/master.svg?label=unix%20build)](https://travis-ci.org/MoOx/eslint-config-i-am-meticulous)
 
 If you have any question about a rule or want to discuss about it, please open an issue.
 
