@@ -1,7 +1,7 @@
 module.exports = {
-  "extends": "eslint-config-i-am-meticulous",
+  extends: "eslint-config-i-am-meticulous",
 
-  "rules": {
+  rules: {
     "no-var": 0,
   },
 }

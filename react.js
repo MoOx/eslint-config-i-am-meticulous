@@ -1,15 +1,17 @@
 module.exports = {
-  "extends": "eslint-config-i-am-meticulous",
+  extends: "./index.js",
 
-  "plugins": [
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+
+  plugins: [
     "react",
   ],
 
-  "ecmaFeatures": {
-    "jsx": true,
-  },
-
-  "rules": {
+  rules: {
     "jsx-quotes": [ 2, "prefer-double" ],
     "react/jsx-closing-bracket-location": [ 2, "tag-aligned" ],
     "react/jsx-curly-spacing": [ 2, "always" ],

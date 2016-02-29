@@ -1,17 +1,20 @@
 module.exports = {
   // mostly good stuff
-  "extends": "eslint:recommended",
+  extends: "eslint:recommended",
 
-  "ecmaFeatures": {
-    "modules": true,
-    "experimentalObjectRestSpread": true,
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: "module",
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true,
+    },
   },
-  "env": {
-    "node": true,
-    "browser": true,
-    "es6": true,
+  env: {
+    node: true,
+    browser: true,
+    es6: true,
   },
-  "rules": {
+  rules: {
     "no-console": 0,
     "indent": [ 2, 2 ],
     "max-len": [ 2, 80, 4 ],
@@ -38,10 +41,5 @@ module.exports = {
     "one-var": [ 2, "never" ],
     "no-var": [ 2 ],
     "no-bitwise": [ 2 ],
-  },
-  "globals": {
-    // this is for webpack :)
-    "__DEV__": true,
-    "__PROD__": true,
   },
 }

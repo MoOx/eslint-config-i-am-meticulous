@@ -1,3 +1,10 @@
+# 3.0.0 - 2016-02-29
+
+**Not changes for rules.**
+
+- Removed: eslint@1.x support
+- Added: eslint@2.x support
+
 # 2.0.0 - 2016-01-20
 
 - Removed: "babel-eslint" is not used by default
