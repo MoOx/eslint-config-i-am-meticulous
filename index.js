@@ -25,7 +25,7 @@ module.exports = {
     "computed-property-spacing": [ 2, "never" ],
     "object-curly-spacing": [ 2, "always" ],
     "array-bracket-spacing": [ 2, "always" ],
-    "space-after-keywords": [ 2, "always" ],
+    "keyword-spacing": [ 2, { "before": true, "after": true } ],
     "space-before-blocks": [ 2, "always" ],
     "space-before-function-paren": [ 2, "never" ],
     "space-in-parens": [ 2, "never" ],
