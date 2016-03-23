@@ -18,11 +18,14 @@
   "devDependencies": {
     "eslint": "^2.0.0",
     "eslint-plugin-react": "^4.1.0",
+    "eslint-find-new-rules": "^1.2.0",
     "npmpub": "^3.0.3"
   },
   "scripts": {
     "lint": "eslint -c index.js --fix \"*.js\" && eslint -c index.js __tests__/index.js && eslint -c react.js __tests__/react.js",
     "test": "npm run lint",
+    "check-update:index": "eslint-find-new-rules ./index.js",
+    "check-update:react": "eslint-find-new-rules ./react.js",
     "release": "npmpub"
   }
 }
