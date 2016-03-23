@@ -17,8 +17,8 @@
   ],
   "devDependencies": {
     "eslint": "^2.0.0",
-    "eslint-plugin-react": "^4.1.0",
     "eslint-find-new-rules": "^1.2.0",
+    "eslint-plugin-react": "^4.2.3",
     "npmpub": "^3.0.3"
   },
   "scripts": {
