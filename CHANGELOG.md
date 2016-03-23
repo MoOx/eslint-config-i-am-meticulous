@@ -1,3 +1,5 @@
+# 4.0.0 - 2016-03-23
+
 **New rules added.**
 
 - Changed: All react rules defined, just a few are disabled.
