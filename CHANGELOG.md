@@ -2,6 +2,7 @@
 
 - Changed: All react rules defined, just a few are disabled.
 - Added: AVA rule set (just recommended rule)
+- Added: flow rule set (just recommended rule)
 
 # 3.0.0 - 2016-02-29
 

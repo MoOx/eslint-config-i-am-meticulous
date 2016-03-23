@@ -4,7 +4,7 @@ module.exports = {
   ],
 
   extends: [
-    "./index.js"
+    "./index.js",
   ],
 
   parserOptions: {

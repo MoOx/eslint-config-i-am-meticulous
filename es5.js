@@ -1,5 +1,7 @@
 module.exports = {
-  extends: "eslint-config-i-am-meticulous",
+  extends: [
+    "./index.js",
+  ],
 
   rules: {
     "no-var": 0,

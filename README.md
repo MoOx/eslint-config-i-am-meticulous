@@ -35,7 +35,9 @@ Add to your eslint configuration (here, in `package.json`)
 
 ### React
 
-To use the meticulous React rule set (that extends the default one):
+To use the meticulous
+[React](https://github.com/facebook/react)
+rule set (that extends the default one):
 
 ```console
 $ npm i -D eslint eslint-plugin-react eslint-config-i-am-meticulous
@@ -49,9 +51,31 @@ $ npm i -D eslint eslint-plugin-react eslint-config-i-am-meticulous
 }
 ```
 
+### Flow
+
+To use the meticulous
+[flow](https://github.com/facebook/react)
+rule set (that extends the default one):
+
+_This rule set require babel-eslint._
+
+```console
+$ npm i -D eslint babel-eslint eslint-plugin-flow-vars eslint-config-i-am-meticulous
+```
+
+```json
+{
+  "eslintConfig": {
+    "extends": "eslint-config-i-am-meticulous/flow"
+  }
+}
+```
+
 ### AVA
 
-To use the meticulous AVA rule set (that extends the default one):
+To use the meticulous
+[AVA](https://github.com/sindresorhus/ava)
+rule set (that extends the default one):
 
 ```console
 $ npm i -D eslint eslint-plugin-ava eslint-config-i-am-meticulous
@@ -77,6 +101,27 @@ $ npm i -D eslint eslint-plugin-react eslint-config-i-am-meticulous
 {
   "eslintConfig": {
     "extends": "eslint-config-i-am-meticulous/es5"
+  }
+}
+```
+
+---
+
+### React, Flow, AVA... Everything!
+
+
+```console
+$ npm i -D eslint babel-eslint eslint-plugin-react eslint-plugin-flow-vars eslint-plugin-ava eslint-config-i-am-meticulous
+```
+
+```json
+{
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-i-am-meticulous/react",
+      "eslint-config-i-am-meticulous/flow",
+      "eslint-config-i-am-meticulous/ava"
+    ]
   }
 }
 ```
