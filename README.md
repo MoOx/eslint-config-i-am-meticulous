@@ -49,6 +49,22 @@ $ npm i -D eslint eslint-plugin-react eslint-config-i-am-meticulous
 }
 ```
 
+### AVA
+
+To use the meticulous AVA rule set (that extends the default one):
+
+```console
+$ npm i -D eslint eslint-plugin-ava eslint-config-i-am-meticulous
+```
+
+```json
+{
+  "eslintConfig": {
+    "extends": "eslint-config-i-am-meticulous/ava"
+  }
+}
+```
+
 ### Old ES5
 
 To use the meticulous ES5 rule set (that extends the default one):
