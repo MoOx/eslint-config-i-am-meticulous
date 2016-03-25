@@ -1,3 +1,9 @@
+# 4.1.0 - 2016-03-25
+
+- Added: react-flow preset.
+  Flow support for props and state property initializers at the top of React
+  classes (so "react/sort-comp" as been adjusted).
+
 # 4.0.0 - 2016-03-23
 
 **New rules added.**

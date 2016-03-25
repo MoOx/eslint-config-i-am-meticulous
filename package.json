@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-i-am-meticulous",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "An ESLint shareable config for meticulous people.",
   "keywords": [
     "eslint",
@@ -13,9 +13,10 @@
   "files": [
     "index.js",
     "react.js",
-    "es5.js",
+    "flow.js",
+    "react-flow.js",
     "ava.js",
-    "flow.js"
+    "es5.js"
   ],
   "devDependencies": {
     "babel-eslint": "^6.0.0-beta.6",
@@ -36,10 +37,11 @@
     "check-update": "npm run check-update:index && npm run check-update:react && npm run check-update:flow && npm run check-update:ava",
     "lint:config": "eslint -c index.js --fix \"*.js\"",
     "lint:index": "eslint -c index.js __tests__/index.js",
-    "lint:react": "eslint -c react.js __tests__/react.js",
+    "lint:react": "eslint -c react.js __tests__/react-fn.js",
     "lint:flow": "eslint -c flow.js __tests__/flow.js interfaces/Something.d.js && flow __tests__/flow.js",
+    "lint:react-flow": "eslint -c react-flow.js __tests__/react-class.js",
     "lint:ava": "eslint -c ava.js __tests__/ava.js",
-    "lint": "npm run lint:config && npm run lint:index && npm run lint:react && npm run lint:flow && npm run lint:ava",
+    "lint": "npm run lint:config && npm run lint:index && npm run lint:react && npm run lint:flow && npm run lint:react-flow && npm run lint:ava",
     "test": "npm run lint && npm run check-update",
     "release": "npmpub"
   }

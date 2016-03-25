@@ -66,10 +66,38 @@ $ npm i -D eslint babel-eslint eslint-plugin-flow-vars eslint-config-i-am-meticu
 ```json
 {
   "eslintConfig": {
+    "parser": "babel-eslint",
     "extends": "eslint-config-i-am-meticulous/flow"
   }
 }
 ```
+
+### React + Flow
+
+To use the meticulous
+[React](https://github.com/facebook/react)
++
+[flow](https://github.com/facebook/react)
+rule set (that extends the default one):
+
+_This rule set require babel-eslint._
+
+```console
+$ npm i -D eslint babel-eslint eslint-plugin-flow-vars eslint-config-i-am-meticulous
+```
+
+```json
+{
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "eslint-config-i-am-meticulous/react-flow"
+  }
+}
+```
+
+_This rule set is a combination of react and flow rule sets but add a tiny
+change to support props and state property initializers to be added at the top
+of classes (react/sort-comp default configuration does not allow that)._
 
 ### AVA
 
@@ -117,9 +145,9 @@ $ npm i -D eslint babel-eslint eslint-plugin-react eslint-plugin-flow-vars eslin
 ```json
 {
   "eslintConfig": {
+    "parser": "babel-eslint",
     "extends": [
-      "eslint-config-i-am-meticulous/react",
-      "eslint-config-i-am-meticulous/flow",
+      "eslint-config-i-am-meticulous/react-flow",
       "eslint-config-i-am-meticulous/ava"
     ]
   }
