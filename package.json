@@ -27,6 +27,7 @@
     "eslint-plugin-react": "^4.2.3",
     "flow": "^0.2.3",
     "flow-bin": "^0.22.1",
+    "npm-run-all": "1.7.0",
     "npmpub": "^3.0.3"
   },
   "scripts": {
@@ -34,14 +35,14 @@
     "check-update:react": "eslint-find-new-rules ./react.js",
     "check-update:flow": "eslint-find-new-rules ./flow.js",
     "check-update:ava": "eslint-find-new-rules ./ava.js",
-    "check-update": "npm run check-update:index && npm run check-update:react && npm run check-update:flow && npm run check-update:ava",
+    "check-update": "npm-run-all --parallel check-update:*",
     "lint:config": "eslint -c index.js --fix \"*.js\"",
     "lint:index": "eslint -c index.js __tests__/index.js",
     "lint:react": "eslint -c react.js __tests__/react-fn.js",
     "lint:flow": "eslint -c flow.js __tests__/flow.js interfaces/Something.d.js && flow __tests__/flow.js",
     "lint:react-flow": "eslint -c react-flow.js __tests__/react-class.js",
     "lint:ava": "eslint -c ava.js __tests__/ava.js",
-    "lint": "npm run lint:config && npm run lint:index && npm run lint:react && npm run lint:flow && npm run lint:react-flow && npm run lint:ava",
+    "lint": "npm-run-all --parallel lint:*",
     "test": "npm run lint && npm run check-update",
     "release": "npmpub"
   }
