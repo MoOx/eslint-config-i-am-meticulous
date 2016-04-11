@@ -1,3 +1,7 @@
+- Fixed: as ``jsx-indent`` is
+  [considered buggy](https://github.com/yannickcr/eslint-plugin-react/issues/540),
+  the rule is for now disabled. If re-enabled, will be done in a major release.
+
 # 4.1.0 - 2016-03-25
 
 - Added: react-flow preset.

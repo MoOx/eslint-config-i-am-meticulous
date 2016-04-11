@@ -22,7 +22,8 @@ module.exports = {
     "react/jsx-equals-spacing": [ 2, "never" ],
     "react/jsx-handler-names": 2,
     "react/jsx-indent-props": [ 2, 2 ],
-    "react/jsx-indent": [ 2, 2 ],
+    // https://github.com/yannickcr/eslint-plugin-react/issues/540
+    "react/jsx-indent": [ 0, 2 ],
     "react/jsx-key": 2,
     "react/jsx-max-props-per-line": 0, // eslint max-len is enough
     "react/jsx-no-bind": 2,

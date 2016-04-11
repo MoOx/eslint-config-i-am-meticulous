@@ -44,6 +44,10 @@ class ReactClass extends Component<void, Props, State> {
           ? "Hi"
           : "Hey"
         }
+        {
+          this.state.clicked &&
+          <div />
+        }
       </div>
     )
   }
