@@ -1,3 +1,5 @@
+# 4.1.1 - 2016-04-11
+
 - Fixed: as ``jsx-indent`` is
   [considered buggy](https://github.com/yannickcr/eslint-plugin-react/issues/540),
   the rule is for now disabled. If re-enabled, will be done in a major release.
