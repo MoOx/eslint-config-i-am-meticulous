@@ -6,6 +6,17 @@
 
 If you have any question about a rule or want to discuss about it, please open an issue.
 
+## NOTE ABOUT SEMVER
+
+**As a linter config, new rules _might_ be added as a minor release.
+It's to enforce good practices.**
+
+So you might want to come to yell here, but we might consider this is not
+a breaking change since it's not breaking you app or build,
+just the linting step (and you can skip this one in case of emergency) :)
+
+_For rules that will change too many things, major releases will be used._
+
 ## Install
 
 ```console
