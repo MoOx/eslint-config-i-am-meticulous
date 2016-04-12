@@ -9,6 +9,12 @@
   "author": "Maxime Thirouin",
   "license": "MIT",
   "repository": "https://github.com/MoOx/eslint-config-i-am-meticulous.git",
+  "#repositories": "https://github.com/npm/npm/issues/11315",
+  "repositories": [
+    "https://github.com/MoOx/eslint-config-i-am-meticulous.git",
+    "https://gitlab.com/MoOx/eslint-config-i-am-meticulous.git",
+    "https://bitbucket.org/MoOx/eslint-config-i-am-meticulous.git"
+  ],
   "main": "index.js",
   "files": [
     "index.js",
