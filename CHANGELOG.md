@@ -1,3 +1,5 @@
+# 4.2.1 - 2016-04-12
+
 - Added: react/require-render-return
 
 # 4.1.1 - 2016-04-11
