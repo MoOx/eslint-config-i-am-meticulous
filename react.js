@@ -54,6 +54,7 @@ module.exports = {
     "react/prop-types": 2,
     "react/react-in-jsx-scope": 2,
     "react/require-extension": 2,
+    "react/require-render-return": 2,
     "react/self-closing-comp": 2,
     "react/sort-comp": 2,
     "react/sort-prop-types": 0, // alpha order is stupid

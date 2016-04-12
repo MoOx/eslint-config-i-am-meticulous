@@ -1,3 +1,5 @@
+- Added: react/require-render-return
+
 # 4.1.1 - 2016-04-11
 
 - Fixed: as ``jsx-indent`` is
