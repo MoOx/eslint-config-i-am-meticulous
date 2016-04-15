@@ -27,7 +27,7 @@
   "devDependencies": {
     "babel-eslint": "^6.0.0",
     "eslint": "^2.7.0",
-    "eslint-find-new-rules": "^2.0.1",
+    "eslint-find-rules": "^1.1.0",
     "eslint-plugin-ava": "^2.1.0",
     "eslint-plugin-flow-vars": "^0.3.0",
     "eslint-plugin-react": "^4.3.0",
@@ -36,10 +36,10 @@
     "npmpub": "^3.0.3"
   },
   "scripts": {
-    "check-update:index": "eslint-find-new-rules ./index.js",
-    "check-update:react": "eslint-find-new-rules ./react.js",
-    "check-update:flow": "eslint-find-new-rules ./flow.js",
-    "check-update:ava": "eslint-find-new-rules ./ava.js",
+    "check-update:index": "eslint-find-rules -u ./index.js",
+    "check-update:react": "eslint-find-rules -u ./react.js",
+    "check-update:flow": "eslint-find-rules -u ./flow.js",
+    "check-update:ava": "eslint-find-rules -u ./ava.js",
     "check-update": "npm-run-all --parallel check-update:*",
     "lint:config": "eslint -c index.js --fix \"*.js\"",
     "lint:index": "eslint -c index.js __tests__/index.js",
