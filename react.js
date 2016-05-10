@@ -30,6 +30,7 @@ module.exports = {
     "react/jsx-no-bind": 2,
     "react/jsx-no-duplicate-props": 2,
     "react/jsx-no-literals": 2,
+    "react/jsx-no-target-blank": 2,
     "react/jsx-no-undef": 2,
     "react/jsx-pascal-case": 2,
     "react/jsx-sort-props": 0, // alpha order is stupid

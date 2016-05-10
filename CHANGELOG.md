@@ -19,6 +19,12 @@
   />
   ```
 
+- Added: [``react/jsx-no-target-blank``](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md).
+  This rules requires that you accompany all ``target='_blank'`` attributes with
+  ``rel='noreferrer noopener'``
+  [for security reasons](https://mathiasbynens.github.io/rel-noopener/).
+
+
 # 4.2.1 - 2016-04-12
 
 - Added: react/require-render-return
