@@ -1,5 +1,6 @@
-/* @flow */
+// @flow
 
+/* eslint-disable import/no-unresolved, import/no-extraneous-dependencies */
 import React, { Element, Component } from "react"
 
 type Callback = () => void

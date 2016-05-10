@@ -1,5 +1,6 @@
 // for the url
 /* eslint-disable max-len */
+/* eslint-disable import/no-commonjs */
 
 module.exports = {
   // warning, this is for tests

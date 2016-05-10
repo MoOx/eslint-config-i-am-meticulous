@@ -1,4 +1,4 @@
-import something from "something"
+import something from "eslint-plugin-ava"
 
 if (typeof window !== "undefined") {
   something(() => {

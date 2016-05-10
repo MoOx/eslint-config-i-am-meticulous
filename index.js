@@ -1,3 +1,5 @@
+/* eslint-disable import/no-commonjs */
+
 module.exports = {
   // mostly good stuff
   extends: "eslint:recommended",
@@ -14,6 +16,11 @@ module.exports = {
     browser: true,
     es6: true,
   },
+
+  plugins: [
+    "import",
+  ],
+
   rules: {
     "no-console": 0,
     "indent": [ 2, 2 ],
@@ -41,5 +48,27 @@ module.exports = {
     "one-var": [ 2, "never" ],
     "no-var": [ 2 ],
     "no-bitwise": [ 2 ],
+
+    "import/default": [ 2 ],
+    "import/export": [ 2 ],
+    "import/extensions": [ 2 ],
+    "import/imports-first": [ 2 ],
+    "import/named": [ 2 ],
+    "import/namespace": [ 2 ],
+    "import/newline-after-import": [ 2 ],
+    "import/no-amd": [ 2 ],
+    "import/no-commonjs": [ 2 ],
+    "import/no-deprecated": [ 2 ],
+    "import/no-duplicates": [ 2 ],
+    "import/no-extraneous-dependencies": [ 2 ],
+    "import/no-mutable-exports": [ 2 ],
+    "import/no-named-as-default-member": [ 2 ],
+    "import/no-named-as-default": [ 2 ],
+    "import/no-namespace": [ 2 ],
+    "import/no-nodejs-modules": [ 0 ],
+    "import/no-unresolved": [ 2, { "commonjs": true } ],
+    "import/order": [ 2, { "newlines-between": "always" } ],
+    // not landed yet
+    // "import/prefer-default-export": [ 2 ],
   },
 }
