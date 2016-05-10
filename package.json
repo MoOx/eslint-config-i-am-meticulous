@@ -21,6 +21,7 @@
     "react.js",
     "flow.js",
     "react-flow.js",
+    "react-native.js",
     "ava.js",
     "es5.js"
   ],

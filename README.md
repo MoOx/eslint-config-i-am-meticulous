@@ -66,6 +66,26 @@ $ npm i -D eslint eslint-plugin-react eslint-config-i-am-meticulous
 }
 ```
 
+### React-Native
+
+To use the meticulous
+[React-Native](https://github.com/facebook/react-native)
+rule set (that extends the default one):
+
+```console
+$ npm i -D eslint eslint-plugin-react-native eslint-config-i-am-meticulous
+```
+
+```json
+{
+  "eslintConfig": {
+    "extends": "eslint-config-i-am-meticulous/react-native"
+  }
+}
+```
+
+_Note: this ruleset does not inherit react one._
+
 ### Flow
 
 To use the meticulous
@@ -154,7 +174,7 @@ $ npm i -D eslint eslint-plugin-react eslint-config-i-am-meticulous
 
 
 ```console
-$ npm i -D eslint babel-eslint eslint-plugin-react eslint-plugin-flow-vars eslint-plugin-ava eslint-config-i-am-meticulous
+$ npm i -D eslint babel-eslint eslint-plugin-react eslint-plugin-flow-vars eslint-plugin-react-native eslint-plugin-ava eslint-config-i-am-meticulous
 ```
 
 ```json
@@ -163,6 +183,7 @@ $ npm i -D eslint babel-eslint eslint-plugin-react eslint-plugin-flow-vars eslin
     "parser": "babel-eslint",
     "extends": [
       "eslint-config-i-am-meticulous/react-flow",
+      "eslint-config-i-am-meticulous/react-native",
       "eslint-config-i-am-meticulous/ava"
     ]
   }

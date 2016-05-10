@@ -26,6 +26,8 @@
   This rules requires that you accompany all ``target='_blank'`` attributes with
   ``rel='noreferrer noopener'``
   [for security reasons](https://mathiasbynens.github.io/rel-noopener/).
+- Added: [``eslint-plugin-react-native``](https://github.com/Intellicode/eslint-plugin-react-native)
+  available as ``eslint-config-i-am-meticulous/react-native``.
 
 
 # 4.2.1 - 2016-04-12
