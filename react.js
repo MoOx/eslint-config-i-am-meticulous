@@ -20,6 +20,7 @@ module.exports = {
     "react/jsx-closing-bracket-location": [ 2, "tag-aligned" ],
     "react/jsx-curly-spacing": [ 2, "always" ],
     "react/jsx-equals-spacing": [ 2, "never" ],
+    "react/jsx-first-prop-new-line": [ 2, "multiline" ],
     "react/jsx-handler-names": 2,
     "react/jsx-indent-props": [ 2, 2 ],
     // https://github.com/yannickcr/eslint-plugin-react/issues/540

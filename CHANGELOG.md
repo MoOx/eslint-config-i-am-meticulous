@@ -1,3 +1,24 @@
+- Added: [``react/jsx-first-prop-new-line``](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md)
+  with ``multiline`` value to enforce first prop on a new line if there is
+  multiple props.  
+  The following patterns are now considered warnings:
+
+  ```js
+  <Hello personal
+      prop />
+  ```
+
+  The following patterns are now not considered warnings:
+
+  ```js
+  <Hello personal={true} />
+
+  <Hello
+      personal={true}
+      foo="bar"
+  />
+  ```
+
 # 4.2.1 - 2016-04-12
 
 - Added: react/require-render-return
