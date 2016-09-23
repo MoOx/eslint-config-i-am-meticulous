@@ -22,7 +22,7 @@ module.exports = {
       "allowMultiline": true,
       "spacing": {
         "objectLiterals": "never",
-      }
+      },
     } ],
     "react/jsx-equals-spacing": [ 2, "never" ],
     "react/jsx-filename-extension": 0, // .jsx sucks :)

@@ -82,6 +82,6 @@ module.exports = {
       "node_modules", // mostly CommonJS (ignored by default)
       "\.(css|scss|less)$", // can't parse unprocessed CSS
       "\.(jpg|png|gif|svg|html|txt|md|woff|woff2|ttf|eot)$", // webpack !
-    ]
-  }
+    ],
+  },
 }
