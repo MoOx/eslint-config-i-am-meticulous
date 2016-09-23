@@ -1,3 +1,7 @@
+- Changed: eslint@3 compat
+- Added: lot of missings rules related to package updates (main for react)
+  - eslint-plugin-react@6
+  - eslint-plugin-ava@3
 - Added: [``eslint-plugin-import``](https://github.com/benmosher/eslint-plugin-import)
   is now included in the default config.
   All rules are on except ``no-nodejs-modules`` which depends on the env.

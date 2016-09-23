@@ -1,17 +1,27 @@
+// @flow
+
 /* eslint-disable import/no-unresolved, import/no-extraneous-dependencies */
 import React, { Component } from "react"
-import { Stylesheet } from "react-native"
 
-class ReactClass extends Component {
-  state = {
+type Callback = () => void
+type EventCallback = (event: SyntheticEvent) => void
+
+type Props = {
+  onMount?: Callback,
+}
+
+type State = {
+  clicked: boolean,
+}
+
+class ReactClass extends Component<void, Props, State> {
+  props: Props;
+
+  state: State = {
     clicked: false,
   };
 
-  static propTypes = {
-    onMount: React.PropTypes.func,
-  };
-
-  constructor(props) {
+  constructor(props: Props) {
     super(props)
   }
 
@@ -21,13 +31,13 @@ class ReactClass extends Component {
     }
   }
 
-  handleClick = (event) => {
+  handleClick: EventCallback = (event: SyntheticEvent) => {
     event.preventDefault()
 
     this.setState({ clicked: true })
   };
 
-  render() {
+  render(): React$Element<*> {
     return (
       <div
         onClick={ this.handleClick }
@@ -39,9 +49,8 @@ class ReactClass extends Component {
           : "Hey"
         }
         {
-          this.state.clicked && (
-            <div style={ styles.test } />
-          )
+          this.state.clicked &&
+            <div />
         }
       </div>
     )
@@ -49,9 +58,3 @@ class ReactClass extends Component {
 }
 
 export default ReactClass
-
-const styles = Stylesheet.create({
-  test: {
-    margin: 10,
-  },
-})
