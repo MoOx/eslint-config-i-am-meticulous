@@ -10,6 +10,11 @@ module.exports = {
       },
     },
   },
+  // @todo replace with
+  // extends: "plugin:import/react-native",
+  // when
+  // https://github.com/benmosher/eslint-plugin-import/pull/574
+  // is released
 
   plugins: [
     "react-native",

@@ -76,4 +76,12 @@ module.exports = {
     "import/order": [ 2, { "newlines-between": "always" } ],
     "import/prefer-default-export": [ 0 ], // does not always make sense
   },
+
+  "settings": {
+    "import/ignore": [
+      "node_modules", // mostly CommonJS (ignored by default)
+      "\.(css|scss|less)$", // can't parse unprocessed CSS
+      "\.(jpg|png|gif|svg|html|txt|md|woff|woff2|ttf|eot)$", // webpack !
+    ]
+  }
 }

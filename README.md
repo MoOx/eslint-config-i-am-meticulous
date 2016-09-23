@@ -24,8 +24,11 @@ _For rules that will change too many things, major releases will be used._
 ## Install
 
 ```console
-$ npm i -D eslint eslint-config-i-am-meticulous
+$ npm i -D eslint eslint-plugin-import eslint-config-i-am-meticulous
 ```
+
+Note that the default config require
+[eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import)
 
 ## Usage
 
@@ -55,7 +58,7 @@ To use the meticulous
 rule set (that extends the default one):
 
 ```console
-$ npm i -D eslint eslint-plugin-react eslint-config-i-am-meticulous
+$ npm i -D eslint eslint-plugin-import eslint-plugin-react eslint-config-i-am-meticulous
 ```
 
 ```json
@@ -73,7 +76,7 @@ To use the meticulous
 rule set (that extends the default one):
 
 ```console
-$ npm i -D eslint eslint-plugin-react-native eslint-config-i-am-meticulous
+$ npm i -D eslint eslint-plugin-import eslint-plugin-react-native eslint-config-i-am-meticulous
 ```
 
 ```json
@@ -95,7 +98,7 @@ rule set (that extends the default one):
 _This rule set require babel-eslint._
 
 ```console
-$ npm i -D eslint babel-eslint eslint-plugin-flow-vars eslint-config-i-am-meticulous
+$ npm i -D eslint eslint-plugin-import babel-eslint eslint-plugin-flow-vars eslint-config-i-am-meticulous
 ```
 
 ```json
@@ -118,7 +121,7 @@ rule set (that extends the default one):
 _This rule set require babel-eslint._
 
 ```console
-$ npm i -D eslint babel-eslint eslint-plugin-flow-vars eslint-config-i-am-meticulous
+$ npm i -D eslint eslint-plugin-import babel-eslint eslint-plugin-flow-vars eslint-config-i-am-meticulous
 ```
 
 ```json
@@ -141,7 +144,7 @@ To use the meticulous
 rule set (that extends the default one):
 
 ```console
-$ npm i -D eslint eslint-plugin-ava eslint-config-i-am-meticulous
+$ npm i -D eslint eslint-plugin-import eslint-plugin-ava eslint-config-i-am-meticulous
 ```
 
 ```json
@@ -157,7 +160,7 @@ $ npm i -D eslint eslint-plugin-ava eslint-config-i-am-meticulous
 To use the meticulous ES5 rule set (that extends the default one):
 
 ```console
-$ npm i -D eslint eslint-plugin-react eslint-config-i-am-meticulous
+$ npm i -D eslint eslint-plugin-import eslint-plugin-react eslint-config-i-am-meticulous
 ```
 
 ```json

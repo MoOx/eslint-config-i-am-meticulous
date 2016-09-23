@@ -18,9 +18,12 @@ module.exports = {
 
     "react/jsx-boolean-value": [ 2, "never" ],
     "react/jsx-closing-bracket-location": [ 2, "tag-aligned" ],
-    "react/jsx-curly-spacing": [ 2, "always", { "spacing": {
-      "objectLiterals": "never",
-    } } ],
+    "react/jsx-curly-spacing": [ 2, "always", {
+      "allowMultiline": true,
+      "spacing": {
+        "objectLiterals": "never",
+      }
+    } ],
     "react/jsx-equals-spacing": [ 2, "never" ],
     "react/jsx-filename-extension": 0, // .jsx sucks :)
     "react/jsx-first-prop-new-line": [ 2, "multiline" ],
