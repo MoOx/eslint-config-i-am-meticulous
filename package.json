@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-i-am-meticulous",
-  "version": "4.2.1",
+  "version": "5.0.0",
   "description": "An ESLint shareable config for meticulous people.",
   "keywords": [
     "eslint",
@@ -55,11 +55,5 @@
     "lint": "npm-run-all --parallel lint:*",
     "test": "npm run lint && npm run check-update",
     "release": "npmpub"
-  },
-
-  "ava": {
-    "files": [
-      "**/__tests__/*.js"
-    ]
   }
 }

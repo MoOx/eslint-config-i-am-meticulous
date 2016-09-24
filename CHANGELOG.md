@@ -1,5 +1,7 @@
+# 5.0.0 - 2016-09-24
+
 - Changed: eslint@3 compat
-- Added: lot of missings rules related to package updates (main for react)
+- Added: lot of missings rules related to package updates (mainly for react)
   - eslint-plugin-react@6
   - eslint-plugin-ava@3
 - Added: [``eslint-plugin-import``](https://github.com/benmosher/eslint-plugin-import)
