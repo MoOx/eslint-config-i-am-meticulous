@@ -1,3 +1,7 @@
+# 5.0.1 - 2016-09-24
+
+- Fixed: json files cause too much issue with import plugin, so ignored.
+
 # 5.0.0 - 2016-09-24
 
 - Changed: eslint@3 compat
