@@ -1,3 +1,6 @@
+
+- Fixed: ``babel-eslint`` is not required for the default config
+
 # 5.0.1 - 2016-09-24
 
 - Fixed: json files cause too much issue with import plugin, so ignored.
