@@ -82,6 +82,7 @@ module.exports = {
   "settings": {
     "import/ignore": [
       "node_modules", // mostly CommonJS (ignored by default)
+      "\.json$", // import plugin does not seems to like json
       "\.(css|scss|less)$", // can't parse unprocessed CSS
       "\.(jpg|png|gif|svg|html|txt|md|woff|woff2|ttf|eot)$", // webpack !
     ],
