@@ -1,3 +1,4 @@
+# 5.0.2 - 2016-09-24
 
 - Fixed: ``babel-eslint`` is not required for the default config
 
