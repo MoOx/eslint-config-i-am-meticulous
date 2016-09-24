@@ -64,7 +64,8 @@ module.exports = {
     "react/no-string-refs": 2,
     "react/no-unescaped-entities": 2,
     "react/no-unknown-property": 2,
-    "react/no-unused-prop-types": 2,
+    // https://github.com/yannickcr/eslint-plugin-react/issues/861
+    "react/no-unused-prop-types": 0,
     "react/prefer-es6-class": 2,
     "react/prefer-stateless-function": 2,
     "react/prop-types": 2,
@@ -80,7 +81,7 @@ module.exports = {
 
         // defaults
         // eslint-disable-next-line max-len
-        // see https://github.com/yannickcr/eslint-plugin-react/blob/master/lib/rules/sort-comp.js
+        // https://github.com/yannickcr/eslint-plugin-react/blob/master/lib/rules/sort-comp.js
         "static-methods",
         "lifecycle",
         "everything-else",
