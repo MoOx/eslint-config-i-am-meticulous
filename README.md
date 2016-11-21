@@ -98,7 +98,7 @@ rule set (that extends the default one):
 _This rule set require babel-eslint._
 
 ```console
-$ npm i -D eslint babel-eslint eslint-plugin-flow-vars eslint-config-i-am-meticulous
+$ npm i -D eslint babel-eslint eslint-plugin-flowtype eslint-config-i-am-meticulous
 ```
 
 ```json
@@ -121,7 +121,7 @@ rule set (that extends the default one):
 _This rule set require babel-eslint._
 
 ```console
-$ npm i -D eslint babel-eslint eslint-plugin-flow-vars eslint-config-i-am-meticulous
+$ npm i -D eslint babel-eslint eslint-plugin-flowtype eslint-config-i-am-meticulous
 ```
 
 ```json
@@ -177,7 +177,7 @@ $ npm i -D eslint eslint-plugin-react eslint-config-i-am-meticulous
 
 
 ```console
-$ npm i -D eslint babel-eslint eslint-plugin-react eslint-plugin-flow-vars eslint-plugin-react-native eslint-plugin-ava eslint-config-i-am-meticulous
+$ npm i -D eslint babel-eslint eslint-plugin-react eslint-plugin-flowtype eslint-plugin-react-native eslint-plugin-ava eslint-config-i-am-meticulous
 ```
 
 ```json
