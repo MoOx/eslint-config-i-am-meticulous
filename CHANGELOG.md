@@ -1,3 +1,12 @@
+# 6.0.0 - 2017-03-23
+
+- Removed: all rules directly related to code styles have been removed.
+  **We recommend you to use [prettier](https://github.com/prettier/prettier).**
+- Changed: eslint `ecmaVersion` set to `2017`
+- Added: some rules for flow
+  ([7a36807](https://github.com/MoOx/eslint-config-i-am-meticulous/commit/7a36807f5b0016fd5fefdb880c7e667b13202c54) & 
+  [98c6bae](https://github.com/MoOx/eslint-config-i-am-meticulous/commit/98c6bae6b38b77143c78b4ccd74e9b508fdf3dd8))
+
 # 5.0.2 - 2016-09-24
 
 - Fixed: ``babel-eslint`` is not required for the default config

@@ -8,6 +8,11 @@
 [![Repo on GitLab](https://img.shields.io/badge/repo-GitLab-6C488A.svg)](https://gitlab.com/MoOx/eslint-config-i-am-meticulous)
 [![Repo on BitBucket](https://img.shields.io/badge/repo-BitBucket-1F5081.svg)](https://bitbucket.org/MoOx/eslint-config-i-am-meticulous)
 
+⚠️ **This config does not contain rules for code style.**
+We recommend you to use [prettier](https://github.com/prettier/prettier).
+
+---
+
 If you have any question about a rule or want to discuss about it, please open an issue.
 
 ## NOTE ABOUT SEMVER
