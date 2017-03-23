@@ -3,25 +3,25 @@
 /* eslint-disable import/no-unresolved, import/no-extraneous-dependencies */
 import React, { Component } from "react"
 
-type Callback = () => void
-type EventCallback = (event: SyntheticEvent) => void
+type CallbackType = () => void
+type EventCallbackType = (event: SyntheticEvent) => void
 
-type Props = {
-  onMount?: Callback,
+type PropsType = {
+  onMount?: CallbackType,
 }
 
-type State = {
+type StateType = {
   clicked: boolean,
 }
 
-class ReactClass extends Component<void, Props, State> {
-  props: Props;
+class ReactClass extends Component<void, PropsType, StateType> {
+  props: PropsType;
 
-  state: State = {
+  state: StateType = {
     clicked: false,
   };
 
-  constructor(props: Props) {
+  constructor(props: PropsType) {
     super(props)
   }
 
@@ -31,7 +31,7 @@ class ReactClass extends Component<void, Props, State> {
     }
   }
 
-  handleClick: EventCallback = (event: SyntheticEvent) => {
+  handleClick: EventCallbackType = (event: SyntheticEvent) => {
     event.preventDefault()
 
     this.setState({ clicked: true })
