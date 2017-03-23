@@ -1,13 +1,9 @@
 module.exports = {
   parser: "babel-eslint",
 
-  plugins: [
-    "react",
-  ],
+  plugins: ["react"],
 
-  extends: [
-    "./index.js",
-  ],
+  extends: ["./index.js"],
 
   parserOptions: {
     ecmaFeatures: {
@@ -29,7 +25,7 @@ module.exports = {
     "react/jsx-tag-spacing": 0,
     "react/jsx-wrap-multilines": 0,
 
-    "react/jsx-boolean-value": [ 2, "never" ],
+    "react/jsx-boolean-value": [2, "never"],
     "react/jsx-filename-extension": 0, // .jsx sucks :)
     "react/jsx-handler-names": 2,
     "react/jsx-key": 2,
@@ -71,27 +67,30 @@ module.exports = {
     "react/require-optimization": 0, // a bit brutal
     "react/require-render-return": 2,
     "react/self-closing-comp": 2,
-    "react/sort-comp": [ 2, {
-      "order": [
-        // allow to add props/state on top of react classes
-        "props",
-        "state",
+    "react/sort-comp": [
+      2,
+      {
+        order: [
+          // allow to add props/state on top of react classes
+          "props",
+          "state",
 
-        // defaults
-        // eslint-disable-next-line max-len
-        // https://github.com/yannickcr/eslint-plugin-react/blob/master/lib/rules/sort-comp.js
-        "static-methods",
-        "lifecycle",
-        "everything-else",
-        "render",
-      ],
-    } ],
+          // defaults
+          // eslint-disable-next-line max-len
+          // https://github.com/yannickcr/eslint-plugin-react/blob/master/lib/rules/sort-comp.js
+          "static-methods",
+          "lifecycle",
+          "everything-else",
+          "render",
+        ],
+      },
+    ],
     "react/sort-prop-types": 0, // alpha order is stupid
     "react/style-prop-object": 2,
 
     // deprecated with v6
     "react/require-extension": 0,
-    "react/wrap-multilines" : 0,
+    "react/wrap-multilines": 0,
     "react/no-comment-textnodes": 0,
 
     // too brutal
@@ -101,4 +100,4 @@ module.exports = {
     "react/require-default-props": 0,
     "react/void-dom-elements-no-children": 0,
   },
-}
+};

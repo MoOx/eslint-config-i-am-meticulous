@@ -1,10 +1,5 @@
 module.exports = {
-  "plugins": [
-    "ava",
-  ],
+  plugins: ["ava"],
 
-  extends: [
-    "./index.js",
-    "plugin:ava/recommended",
-  ],
-}
+  extends: ["./index.js", "plugin:ava/recommended"],
+};

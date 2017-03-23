@@ -1,29 +1,29 @@
 /* eslint-disable import/no-unresolved, import/no-extraneous-dependencies */
-import React, { PropTypes } from "react"
-import cx from "classnames"
+import React, { PropTypes } from "react";
+import cx from "classnames";
 
-import styles from "./index.css"
+import styles from "./index.css";
 
-const Button = (props) => (
+const Button = props => (
   <button
     role="button"
-    { ...props }
-    className={ cx({
+    {...props}
+    className={cx({
       [props.className]: true,
       [styles.button]: true,
       [styles.huge]: props.huge,
-    }) }
+    })}
   >
-    { props.children }
+    {props.children}
   </button>
-)
+);
 
 Button.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   huge: PropTypes.bool,
-}
+};
 
-Button.displayName = "Button"
+Button.displayName = "Button";
 
-export default Button
+export default Button;

@@ -1,9 +1,9 @@
-import something from "eslint-plugin-ava"
-import somethingElse from "eslint-plugin-react"
+import something from "eslint-plugin-ava";
+import somethingElse from "eslint-plugin-react";
 
 if (typeof window !== "undefined") {
-  console.log(somethingElse)
+  console.log(somethingElse);
   something(() => {
-    console.log("this is a test")
-  })
+    console.log("this is a test");
+  });
 }

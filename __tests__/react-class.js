@@ -1,6 +1,6 @@
 /* eslint-disable import/no-unresolved, import/no-extraneous-dependencies */
-import React, { Component } from "react"
-import { Stylesheet } from "react-native"
+import React, { Component } from "react";
+import { Stylesheet } from "react-native";
 
 class ReactClass extends Component {
   state = {
@@ -12,46 +12,35 @@ class ReactClass extends Component {
   };
 
   constructor(props) {
-    super(props)
+    super(props);
   }
 
   componentDidMount() {
     if (this.props.onMount) {
-      this.props.onMount()
+      this.props.onMount();
     }
   }
 
-  handleClick = (event) => {
-    event.preventDefault()
+  handleClick = event => {
+    event.preventDefault();
 
-    this.setState({ clicked: true })
+    this.setState({ clicked: true });
   };
 
   render() {
     return (
-      <div
-        onClick={ this.handleClick }
-        style={{ color: "blue" }}
-      >
-        {
-          !this.state.clicked
-          ? "Hi"
-          : "Hey"
-        }
-        {
-          this.state.clicked && (
-            <div style={ styles.test } />
-          )
-        }
+      <div onClick={this.handleClick} style={{ color: "blue" }}>
+        {!this.state.clicked ? "Hi" : "Hey"}
+        {this.state.clicked && <div style={styles.test} />}
       </div>
-    )
+    );
   }
 }
 
-export default ReactClass
+export default ReactClass;
 
 const styles = Stylesheet.create({
   test: {
     margin: 10,
   },
-})
+});

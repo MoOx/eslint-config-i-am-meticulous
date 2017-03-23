@@ -2,4 +2,4 @@
 
 type SomethingType = {
   blah: string,
-}
+};

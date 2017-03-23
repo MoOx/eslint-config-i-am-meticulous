@@ -1,8 +1,8 @@
 module.exports = {
   settings: {
     "import/resolver": {
-      "node": {
-        "extensions": [ ".js", ".web.js", ".ios.js", ".android.js" ],
+      node: {
+        extensions: [".js", ".web.js", ".ios.js", ".android.js"],
       },
     },
   },
@@ -12,9 +12,7 @@ module.exports = {
   // https://github.com/benmosher/eslint-plugin-import/pull/574
   // is released
 
-  plugins: [
-    "react-native",
-  ],
+  plugins: ["react-native"],
 
   rules: {
     "react-native/no-unused-styles": 2,
@@ -22,4 +20,4 @@ module.exports = {
     "react-native/no-inline-styles": 2,
     "react-native/no-color-literals": 0, // too subjective
   },
-}
+};

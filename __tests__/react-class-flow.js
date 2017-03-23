@@ -1,18 +1,18 @@
 // @flow
 
 /* eslint-disable import/no-unresolved, import/no-extraneous-dependencies */
-import React, { Component } from "react"
+import React, { Component } from "react";
 
-type CallbackType = () => void
-type EventCallbackType = (event: SyntheticEvent) => void
+type CallbackType = () => void;
+type EventCallbackType = (event: SyntheticEvent) => void;
 
 type PropsType = {
   onMount?: CallbackType,
-}
+};
 
 type StateType = {
   clicked: boolean,
-}
+};
 
 class ReactClass extends Component<void, PropsType, StateType> {
   props: PropsType;
@@ -22,39 +22,29 @@ class ReactClass extends Component<void, PropsType, StateType> {
   };
 
   constructor(props: PropsType) {
-    super(props)
+    super(props);
   }
 
   componentDidMount() {
     if (this.props.onMount) {
-      this.props.onMount()
+      this.props.onMount();
     }
   }
 
   handleClick: EventCallbackType = (event: SyntheticEvent) => {
-    event.preventDefault()
+    event.preventDefault();
 
-    this.setState({ clicked: true })
+    this.setState({ clicked: true });
   };
 
   render(): React$Element<*> {
     return (
-      <div
-        onClick={ this.handleClick }
-        style={{ color: "blue" }}
-      >
-        {
-          !this.state.clicked
-          ? "Hi"
-          : "Hey"
-        }
-        {
-          this.state.clicked &&
-            <div />
-        }
+      <div onClick={this.handleClick} style={{ color: "blue" }}>
+        {!this.state.clicked ? "Hi" : "Hey"}
+        {this.state.clicked && <div />}
       </div>
-    )
+    );
   }
 }
 
-export default ReactClass
+export default ReactClass;

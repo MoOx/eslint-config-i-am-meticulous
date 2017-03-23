@@ -1,10 +1,5 @@
 module.exports = {
-  plugins: [
-    "react",
-  ],
+  plugins: ["react"],
 
-  extends: [
-    "./react.js",
-    "./flow.js",
-  ],
-}
+  extends: ["./react.js", "./flow.js"],
+};
