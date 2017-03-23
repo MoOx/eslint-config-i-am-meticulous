@@ -37,10 +37,15 @@
     "eslint-plugin-import": "^1.16.0",
     "eslint-plugin-react": "^6.3.0",
     "flow-bin": "^0.33.0",
+    "husky": "^0.13.2",
+    "lint-staged": "^3.4.0",
     "npm-run-all": "^3.1.0",
-    "npmpub": "^3.0.3"
+    "npmpub": "^3.0.3",
+    "prettier": "^0.22.0"
   },
   "scripts": {
+    "#precommit": "setup by husky",
+    "precommit": "lint-staged",
     "check-update:index": "eslint-find-rules -u ./index.js",
     "check-update:react": "eslint-find-rules -u ./react.js",
     "check-update:flow": "eslint-find-rules -u ./flow.js",
@@ -54,6 +59,13 @@
     "lint:ava": "eslint -c ava.js __tests__/ava.js",
     "lint": "npm-run-all --parallel lint:*",
     "test": "npm run lint && npm run check-update",
-    "release": "npmpub"
+    "release": "npmpub",
+    "format": "prettier --write --trailing-comma=all \"*.js\" \"!(node_modules)/*.js\""
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --trailing-comma=all",
+      "git add"
+    ]
   }
 }
