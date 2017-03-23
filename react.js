@@ -16,36 +16,33 @@ module.exports = {
   },
 
   rules: {
-    "jsx-quotes": [ 2, "prefer-double" ],
+    // no styles rules (=> prettier)
+    "jsx-quotes": 0,
+    "react/jsx-closing-bracket-location": 0,
+    "react/jsx-curly-spacing": 0,
+    "react/jsx-equals-spacing": 0,
+    "react/jsx-first-prop-new-line": 0,
+    "react/jsx-indent-props": 0,
+    "react/jsx-indent": 0,
+    "react/jsx-max-props-per-line": 0,
+    "react/jsx-space-before-closing": 0,
+    "react/jsx-tag-spacing": 0,
+    "react/jsx-wrap-multilines": 0,
 
     "react/jsx-boolean-value": [ 2, "never" ],
-    "react/jsx-closing-bracket-location": [ 2, "tag-aligned" ],
-    "react/jsx-curly-spacing": [ 2, "always", {
-      "allowMultiline": true,
-      "spacing": {
-        "objectLiterals": "never",
-      },
-    } ],
-    "react/jsx-equals-spacing": [ 2, "never" ],
     "react/jsx-filename-extension": 0, // .jsx sucks :)
-    "react/jsx-first-prop-new-line": [ 2, "multiline" ],
     "react/jsx-handler-names": 2,
-    "react/jsx-indent-props": [ 2, 2 ],
-    "react/jsx-indent": [ 2, 2 ],
     "react/jsx-key": 2,
-    "react/jsx-max-props-per-line": 0, // eslint max-len is enough
     "react/jsx-no-bind": 2,
     "react/jsx-no-duplicate-props": 2,
     "react/jsx-no-literals": 2,
     "react/jsx-no-target-blank": 2,
-    "react/jsx-no-undef": 2,
     "react/jsx-pascal-case": 2,
+    "react/jsx-no-undef": 2,
     "react/jsx-sort-props": 0, // alpha order is stupid
     "react/jsx-sort-prop-types": 0, // deprecated
-    "react/jsx-space-before-closing": 2,
     "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
-    "react/jsx-wrap-multilines": 2,
     "react/jsx-no-comment-textnodes": 2,
 
     "react/forbid-component-props": 0, // I know what I am doing ok?
@@ -66,8 +63,7 @@ module.exports = {
     "react/no-string-refs": 2,
     "react/no-unescaped-entities": 2,
     "react/no-unknown-property": 2,
-    // https://github.com/yannickcr/eslint-plugin-react/issues/861
-    "react/no-unused-prop-types": 0,
+    "react/no-unused-prop-types": 2,
     "react/prefer-es6-class": 2,
     "react/prefer-stateless-function": 2,
     "react/prop-types": 2,
@@ -97,5 +93,12 @@ module.exports = {
     "react/require-extension": 0,
     "react/wrap-multilines" : 0,
     "react/no-comment-textnodes": 0,
+
+    // too brutal
+    "react/forbid-elements": 0,
+    "react/forbid-foreign-prop-types": 0,
+    "react/no-array-index-key": 0,
+    "react/require-default-props": 0,
+    "react/void-dom-elements-no-children": 0,
   },
 }
