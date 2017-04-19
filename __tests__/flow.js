@@ -1,5 +1,7 @@
 // @flow
 
-export function something(arg: SomethingType): string {
+type funcTionType = Function;
+
+export const something: funcTionType = (arg: SomethingType): string => {
   return arg.blah;
-}
+};

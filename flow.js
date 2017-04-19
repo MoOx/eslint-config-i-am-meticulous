@@ -13,7 +13,7 @@ module.exports = {
     "flowtype/boolean-style": 2,
     "flowtype/no-dupe-keys": 2,
     "flowtype/no-primitive-constructor-types": 2,
-    "flowtype/type-id-match": [2, "^([A-Z][a-z0-9]*)+Type$"],
+    "flowtype/type-id-match": [2, "^([A-Za-z][A-Za-z0-9]*)+Type$"],
 
     // too brutal
     "flowtype/no-weak-types": 0,
