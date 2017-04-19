@@ -16,6 +16,7 @@ module.exports = {
     "flowtype/type-id-match": [2, "^([A-Za-z][A-Za-z0-9]*)+Type$"],
 
     // too brutal
+    "flowtype/no-types-missing-file-annotation": 0, // what about flow 'all' option?
     "flowtype/no-weak-types": 0,
     "flowtype/require-parameter-type": 0,
     "flowtype/require-return-type": 0,

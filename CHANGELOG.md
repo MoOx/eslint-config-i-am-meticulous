@@ -1,3 +1,8 @@
+# 6.0.1 - 2017-04-19
+
+- Relaxed: `flowtype/type-id-match` is less strict.
+  It accepts lowercase for the first letter (eg: for function type)
+
 # 6.0.0 - 2017-03-23
 
 - Removed: all rules directly related to code styles have been removed.
