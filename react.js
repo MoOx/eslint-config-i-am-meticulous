@@ -3,7 +3,7 @@ module.exports = {
 
   plugins: ["react"],
 
-  extends: ["./index.js"],
+  extends: ["./index.js", "./_flow-globals.js"],
 
   parserOptions: {
     ecmaFeatures: {
@@ -15,6 +15,7 @@ module.exports = {
     // no styles rules (=> prettier)
     "jsx-quotes": 0,
     "react/jsx-closing-bracket-location": 0,
+    "react/jsx-closing-tag-location": 0,
     "react/jsx-curly-spacing": 0,
     "react/jsx-equals-spacing": 0,
     "react/jsx-first-prop-new-line": 0,
@@ -41,8 +42,10 @@ module.exports = {
     "react/jsx-uses-vars": 2,
     "react/jsx-no-comment-textnodes": 2,
 
-    "react/forbid-component-props": 0, // I know what I am doing ok?
+    "react/boolean-prop-naming": 0,
+    "react/default-props-match-prop-types": 2,
     "react/display-name": 0, // transpilers does a good job for now
+    "react/forbid-component-props": 0, // I know what I am doing ok?
     "react/forbid-prop-types": 0,
     "react/no-children-prop": 2,
     "react/no-danger-with-children": 2,
@@ -55,11 +58,15 @@ module.exports = {
     "react/no-is-mounted": 2,
     "react/no-multi-comp": 2,
     "react/no-render-return-value": 2,
+    "react/no-redundant-should-component-update": 2,
     "react/no-set-state": 0, // sometimes it's relevant
     "react/no-string-refs": 2,
+    "react/no-typos": 2,
     "react/no-unescaped-entities": 2,
     "react/no-unknown-property": 2,
     "react/no-unused-prop-types": 2,
+    "react/no-unused-state": 2,
+    "react/no-will-update-set-state": 2,
     "react/prefer-es6-class": 2,
     "react/prefer-stateless-function": 2,
     "react/prop-types": 2,

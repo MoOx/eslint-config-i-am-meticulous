@@ -4,7 +4,7 @@
 import React, { Component } from "react";
 
 type CallbackType = () => void;
-type EventCallbackType = (event: SyntheticEvent) => void;
+type EventCallbackType = (event: SyntheticEvent<*>) => void;
 
 type PropsType = {
   onMount?: CallbackType,
@@ -14,7 +14,7 @@ type StateType = {
   clicked: boolean,
 };
 
-class ReactClass extends Component<void, PropsType, StateType> {
+class ReactClass extends Component<PropsType, StateType> {
   props: PropsType;
 
   state: StateType = {
@@ -31,7 +31,7 @@ class ReactClass extends Component<void, PropsType, StateType> {
     }
   }
 
-  handleClick: EventCallbackType = (event: SyntheticEvent) => {
+  handleClick: EventCallbackType = (event: SyntheticEvent<*>) => {
     event.preventDefault();
 
     this.setState({ clicked: true });

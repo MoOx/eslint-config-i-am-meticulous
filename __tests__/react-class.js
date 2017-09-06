@@ -1,5 +1,6 @@
 /* eslint-disable import/no-unresolved, import/no-extraneous-dependencies */
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import { Stylesheet } from "react-native";
 
 class ReactClass extends Component {
@@ -8,7 +9,7 @@ class ReactClass extends Component {
   };
 
   static propTypes = {
-    onMount: React.PropTypes.func,
+    onMount: PropTypes.func,
   };
 
   constructor(props) {
@@ -21,7 +22,7 @@ class ReactClass extends Component {
     }
   }
 
-  handleClick = event => {
+  handleClick = (event: SyntheticEvent<*>) => {
     event.preventDefault();
 
     this.setState({ clicked: true });
