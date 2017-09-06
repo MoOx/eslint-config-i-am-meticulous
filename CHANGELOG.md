@@ -1,3 +1,9 @@
+# 7.0.0 - 2017-09-06
+
+- Eslint 4+
+- Updated all plugins with new (undefined) rules (some on, some off)
+- Globals to prevent "no-undef" with Flow ([ref](https://github.com/gajus/eslint-plugin-flowtype/issues/261))
+
 # 6.0.1 - 2017-04-19
 
 - Relaxed: `flowtype/type-id-match` is less strict.
