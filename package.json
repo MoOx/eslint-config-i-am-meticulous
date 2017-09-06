@@ -50,7 +50,7 @@
     "precommit": "lint-staged",
     "check-update:index": "eslint-find-rules -u ./index.js",
     "check-update:react": "eslint-find-rules -u ./react.js",
-    "check-update:react": "eslint-find-rules -u ./react-native.js",
+    "check-update:react-native": "eslint-find-rules -u ./react-native.js",
     "check-update:flow": "eslint-find-rules -u ./flow.js",
     "check-update:ava": "eslint-find-rules -u ./ava.js",
     "check-update": "npm-run-all --parallel check-update:*",
