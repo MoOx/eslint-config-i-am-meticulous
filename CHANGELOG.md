@@ -1,3 +1,7 @@
+# 7.0.1 - 2017-09-06
+
+- `react-native` correctly extends `react-flow`
+
 # 7.0.0 - 2017-09-06
 
 - Eslint 4+
