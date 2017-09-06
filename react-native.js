@@ -1,4 +1,6 @@
 module.exports = {
+  extends: ["./react-flow.js"],
+
   settings: {
     "import/resolver": {
       node: {

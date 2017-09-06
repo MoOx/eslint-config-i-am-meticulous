@@ -45,44 +45,6 @@ Add to your eslint configuration (here, in `package.json`)
 }
 ```
 
-### React
-
-To use the meticulous
-[React](https://github.com/facebook/react)
-rule set (that extends the default one):
-
-```console
-$ npm i -D eslint eslint-plugin-react eslint-config-i-am-meticulous
-```
-
-```json
-{
-  "eslintConfig": {
-    "extends": "eslint-config-i-am-meticulous/react"
-  }
-}
-```
-
-### React-Native
-
-To use the meticulous
-[React-Native](https://github.com/facebook/react-native)
-rule set (that extends the default one):
-
-```console
-$ npm i -D eslint eslint-plugin-react-native eslint-config-i-am-meticulous
-```
-
-```json
-{
-  "eslintConfig": {
-    "extends": "eslint-config-i-am-meticulous/react-native"
-  }
-}
-```
-
-_Note: this ruleset does not inherit react one._
-
 ### Flow
 
 To use the meticulous
@@ -100,6 +62,24 @@ $ npm i -D eslint babel-eslint eslint-plugin-flowtype eslint-config-i-am-meticul
   "eslintConfig": {
     "parser": "babel-eslint",
     "extends": "eslint-config-i-am-meticulous/flow"
+  }
+}
+```
+
+### React
+
+To use the meticulous
+[React](https://github.com/facebook/react)
+rule set (that extends the default one):
+
+```console
+$ npm i -D eslint eslint-plugin-react eslint-config-i-am-meticulous
+```
+
+```json
+{
+  "eslintConfig": {
+    "extends": "eslint-config-i-am-meticulous/react"
   }
 }
 ```
@@ -131,6 +111,24 @@ _This rule set is a combination of react and flow rule sets but add a tiny
 change to support props and state property initializers to be added at the top
 of classes (react/sort-comp default configuration does not allow that)._
 
+### React-Native
+
+To use the meticulous
+[React-Native](https://github.com/facebook/react-native)
+rule set (that extends the default React and Flow ones):
+
+```console
+$ npm i -D eslint eslint-plugin-react eslint-plugin-react-native eslint-plugin-flowtype eslint-config-i-am-meticulous
+```
+
+```json
+{
+  "eslintConfig": {
+    "extends": "eslint-config-i-am-meticulous/react-native"
+  }
+}
+```
+
 ### AVA
 
 To use the meticulous
@@ -161,28 +159,6 @@ $ npm i -D eslint eslint-plugin-react eslint-config-i-am-meticulous
 {
   "eslintConfig": {
     "extends": "eslint-config-i-am-meticulous/es5"
-  }
-}
-```
-
----
-
-### React, Flow, AVA... Everything!
-
-
-```console
-$ npm i -D eslint babel-eslint eslint-plugin-react eslint-plugin-flowtype eslint-plugin-react-native eslint-plugin-ava eslint-config-i-am-meticulous
-```
-
-```json
-{
-  "eslintConfig": {
-    "parser": "babel-eslint",
-    "extends": [
-      "eslint-config-i-am-meticulous/react-flow",
-      "eslint-config-i-am-meticulous/react-native",
-      "eslint-config-i-am-meticulous/ava"
-    ]
   }
 }
 ```
