@@ -13,6 +13,10 @@ We recommend you to use [prettier](https://github.com/prettier/prettier).
 
 ---
 
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/6RNUx3a3Vj2k5iApeppsc9L9/MoOx/eslint-config-i-am-meticulous'>  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/6RNUx3a3Vj2k5iApeppsc9L9/MoOx/eslint-config-i-am-meticulous.svg' /></a>
+
+---
+
 If you have any question about a rule or want to discuss about it, please open an issue.
 
 ## Install
