@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-i-am-meticulous",
-  "version": "7.0.1",
+  "version": "8.0.0",
   "description": "An ESLint shareable config for meticulous people.",
   "keywords": [
     "eslint",
@@ -30,7 +30,7 @@
     "eslint-plugin-import": "^2.7.0"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
+    "babel-eslint": "^8.2.1",
     "eslint": "^4.6.1",
     "eslint-find-rules": "^3.1.1",
     "eslint-plugin-ava": "^4.2.2",
@@ -38,7 +38,7 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-react": "^7.3.0",
     "eslint-plugin-react-native": "^3.1.0",
-    "flow-bin": "^0.54.0",
+    "flow-bin": "^0.65.0",
     "husky": "^0.14.3",
     "lint-staged": "^4.1.0",
     "npm-run-all": "^4.1.1",

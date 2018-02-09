@@ -6,13 +6,13 @@ import React, { Component } from "react";
 type CallbackType = () => void;
 type EventCallbackType = (event: SyntheticEvent<*>) => void;
 
-type PropsType = {
+type PropsType = {|
   onMount?: CallbackType,
-};
+|};
 
-type StateType = {
+type StateType = {|
   clicked: boolean,
-};
+|};
 
 class ReactClass extends Component<PropsType, StateType> {
   props: PropsType;
@@ -20,6 +20,9 @@ class ReactClass extends Component<PropsType, StateType> {
   state: StateType = {
     clicked: false,
   };
+
+  someInternalThing: boolean;
+  someOtherInternalThing = true;
 
   constructor(props: PropsType) {
     super(props);

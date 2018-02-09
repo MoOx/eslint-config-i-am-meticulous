@@ -42,6 +42,15 @@ module.exports = {
     "react/jsx-uses-vars": 2,
     "react/jsx-no-comment-textnodes": 2,
 
+    "react/button-has-type": 0,
+    "react/destructuring-assignment": 0,
+    "react/forbid-dom-props": 0,
+    "react/jsx-child-element-spacing": 0,
+    "react/jsx-curly-brace-presence": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-sort-default-props": 0,
+    "react/no-access-state-in-setstate": 0,
+    "react/no-this-in-sfc": 0,
     "react/boolean-prop-naming": 0,
     "react/default-props-match-prop-types": 2,
     "react/display-name": 0, // transpilers does a good job for now
@@ -81,10 +90,8 @@ module.exports = {
           // allow to add props/state on top of react classes
           "props",
           "state",
-
-          // defaults
-          // eslint-disable-next-line max-len
-          // https://github.com/yannickcr/eslint-plugin-react/blob/master/lib/rules/sort-comp.js
+          "type-annotations",
+          "instance-variables",
           "static-methods",
           "lifecycle",
           "everything-else",

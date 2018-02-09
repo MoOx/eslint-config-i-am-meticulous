@@ -13,9 +13,12 @@ module.exports = {
     "flowtype/boolean-style": 2,
     "flowtype/no-dupe-keys": 2,
     "flowtype/no-primitive-constructor-types": 2,
-    "flowtype/type-id-match": [2, "^([A-Za-z][A-Za-z0-9]*)+Type$"],
+    "flowtype/no-unused-expressions": 2,
+    "flowtype/no-mutable-array": 2,
+    "flowtype/require-exact-type": 2,
 
     // too brutal
+    "flowtype/type-id-match": 0,
     "flowtype/no-types-missing-file-annotation": 0, // what about flow 'all' option?
     "flowtype/no-weak-types": 0,
     "flowtype/require-parameter-type": 0,
@@ -23,6 +26,7 @@ module.exports = {
     "flowtype/require-valid-file-annotation": 0,
     "flowtype/require-variable-type": 0,
     "flowtype/sort-keys": 0,
+    "flowtype/no-flow-fix-me-comments": 0,
 
     // no styles rules (=> prettier)
     "flowtype/semi": 0,

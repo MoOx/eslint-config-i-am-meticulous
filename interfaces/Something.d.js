@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
 
-type SomethingType = {
+type SomethingType = {|
   blah: string,
-};
+|};
