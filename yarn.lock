@@ -534,13 +534,13 @@ eslint-plugin-ava@^4.2.2:
     multimatch "^2.1.0"
     pkg-up "^2.0.0"
 
-eslint-plugin-flowtype@^2.35.1:
+eslint-plugin-flowtype@^2.49.3:
   version "2.49.3"
   resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-2.49.3.tgz#ccca6ee5ba2027eb3ed36bc2ec8c9a842feee841"
   dependencies:
     lodash "^4.17.10"
 
-eslint-plugin-import@^2.7.0:
+eslint-plugin-import@^2.12.0:
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.12.0.tgz#dad31781292d6664b25317fd049d2e2b2f02205d"
   dependencies:
@@ -559,13 +559,13 @@ eslint-plugin-react-native-globals@^0.1.1:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-native-globals/-/eslint-plugin-react-native-globals-0.1.2.tgz#ee1348bc2ceb912303ce6bdbd22e2f045ea86ea2"
 
-eslint-plugin-react-native@^3.1.0:
+eslint-plugin-react-native@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-native/-/eslint-plugin-react-native-3.2.1.tgz#04fcadd3285b7cd2f27146e640c941b00acc4e7e"
   dependencies:
     eslint-plugin-react-native-globals "^0.1.1"
 
-eslint-plugin-react@^7.3.0:
+eslint-plugin-react@^7.9.1:
   version "7.9.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.9.1.tgz#101aadd15e7c7b431ed025303ac7b421a8e3dc15"
   dependencies:

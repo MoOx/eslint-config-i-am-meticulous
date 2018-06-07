@@ -1,3 +1,7 @@
+# 9.0.1 - 2018-06-07
+
+- Bump dep/devDeps to ensure compat with rules
+
 # 9.0.0 - 2018-06-07
 
 - `import/no-self-import` enabled
