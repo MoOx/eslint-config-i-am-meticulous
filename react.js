@@ -7,8 +7,8 @@ module.exports = {
 
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
-    },
+      jsx: true
+    }
   },
 
   rules: {
@@ -25,6 +25,7 @@ module.exports = {
     "react/jsx-space-before-closing": 0,
     "react/jsx-tag-spacing": 0,
     "react/jsx-wrap-multilines": 0,
+    "react/jsx-props-no-multi-spaces": 0,
 
     "react/jsx-boolean-value": [2, "never"],
     "react/jsx-filename-extension": 0, // .jsx sucks :)
@@ -60,8 +61,8 @@ module.exports = {
     "react/no-danger-with-children": 2,
     "react/no-danger": 0, // dangerous properties names are clear enough
     "react/no-deprecated": 2,
-    "react/no-did-mount-set-state": 2,
-    "react/no-did-update-set-state": 2,
+    "react/no-did-mount-set-state": 0, // sometime it make sense
+    "react/no-did-update-set-state": 0, // sometime it make sense
     "react/no-direct-mutation-state": 2,
     "react/no-find-dom-node": 2,
     "react/no-is-mounted": 2,
@@ -95,9 +96,9 @@ module.exports = {
           "static-methods",
           "lifecycle",
           "everything-else",
-          "render",
-        ],
-      },
+          "render"
+        ]
+      }
     ],
     "react/sort-prop-types": 0, // alpha order is stupid
     "react/style-prop-object": 2,
@@ -113,5 +114,6 @@ module.exports = {
     "react/no-array-index-key": 0,
     "react/require-default-props": 0,
     "react/void-dom-elements-no-children": 0,
-  },
+    "react/jsx-max-depth": 0
+  }
 };

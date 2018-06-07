@@ -27,8 +27,14 @@ module.exports = {
     "flowtype/require-variable-type": 0,
     "flowtype/sort-keys": 0,
     "flowtype/no-flow-fix-me-comments": 0,
+    "flowtype/array-style-complex-type": 0,
+    "flowtype/array-style-simple-type": 0,
+    "flowtype/no-existential-type": 0,
+    "flowtype/require-types-at-top": 0,
+    "flowtype/type-import-style": 0,
 
     // no styles rules (=> prettier)
+    "flowtype/newline-after-flow-annotation": 0,
     "flowtype/semi": 0,
     "flowtype/delimiter-dangle": 0,
     "flowtype/object-type-delimiter": 0,
@@ -39,6 +45,6 @@ module.exports = {
     "flowtype/union-intersection-spacing": 0,
 
     // deprecated
-    "flowtype/valid-syntax": 0,
-  },
+    "flowtype/valid-syntax": 0
+  }
 };

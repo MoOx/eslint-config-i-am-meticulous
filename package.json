@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-i-am-meticulous",
-  "version": "8.0.0",
+  "version": "9.0.0",
   "description": "An ESLint shareable config for meticulous people.",
   "keywords": [
     "eslint",
@@ -40,14 +40,13 @@
     "eslint-plugin-react-native": "^3.1.0",
     "flow-bin": "^0.65.0",
     "husky": "^0.14.3",
-    "lint-staged": "^4.1.0",
     "npm-run-all": "^4.1.1",
-    "npmpub": "^3.1.0",
-    "prettier": "^1.6.1"
+    "npmpub": "^4.0.0",
+    "prettier": "^1.13.4",
+    "pretty-quick": "^1.6.0"
   },
   "scripts": {
-    "#precommit": "setup by husky",
-    "precommit": "lint-staged",
+    "precommit": "pretty-quick --staged",
     "check-update:index": "eslint-find-rules -u ./index.js",
     "check-update:react": "eslint-find-rules -u ./react.js",
     "check-update:react-native": "eslint-find-rules -u ./react-native.js",
@@ -65,11 +64,5 @@
     "test": "npm run -s lint && npm run -s check-update",
     "release": "npmpub",
     "format": "prettier --write --trailing-comma=all \"*.js\" \"!(node_modules)/*.js\""
-  },
-  "lint-staged": {
-    "*.js": [
-      "prettier --write --trailing-comma=all",
-      "git add"
-    ]
   }
 }
