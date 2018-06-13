@@ -1,25 +1,16 @@
 module.exports = {
-  extends: ["./react-flow.js"],
+  extends: ["plugin:import/react-native", "./react-flow.js"],
 
-  settings: {
-    "import/resolver": {
-      node: {
-        extensions: [".js", ".web.js", ".ios.js", ".android.js"],
-      },
-    },
+  env: {
+    "react-native/react-native": true
   },
-  // @todo replace with
-  // extends: "plugin:import/react-native",
-  // when
-  // https://github.com/benmosher/eslint-plugin-import/pull/574
-  // is released
 
   plugins: ["react-native"],
 
   rules: {
     "react-native/no-unused-styles": 2,
     "react-native/split-platform-components": 2,
-    "react-native/no-inline-styles": 2,
-    "react-native/no-color-literals": 0, // too subjective
-  },
+    "react-native/no-inline-styles": 0, // often boring
+    "react-native/no-color-literals": 0 // too subjective
+  }
 };
