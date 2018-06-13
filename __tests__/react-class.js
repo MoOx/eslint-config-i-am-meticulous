@@ -4,10 +4,6 @@ import PropTypes from "prop-types";
 import { Stylesheet } from "react-native";
 
 class ReactClass extends Component {
-  state = {
-    clicked: false,
-  };
-
   static propTypes = {
     onMount: PropTypes.func,
   };
@@ -15,6 +11,10 @@ class ReactClass extends Component {
   constructor(props) {
     super(props);
   }
+
+  state = {
+    clicked: false,
+  };
 
   componentDidMount() {
     if (this.props.onMount) {

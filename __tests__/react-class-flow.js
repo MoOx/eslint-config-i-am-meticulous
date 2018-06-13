@@ -3,30 +3,21 @@
 /* eslint-disable import/no-unresolved, import/no-extraneous-dependencies */
 import React, { Component } from "react";
 
-type CallbackType = () => void;
-type EventCallbackType = (event: SyntheticEvent<*>) => void;
+type callback = () => void;
+type eventCallback = (event: SyntheticEvent<*>) => void;
 
-type PropsType = {|
-  onMount?: CallbackType,
+type props = {|
+  onMount?: callback,
 |};
 
-type StateType = {|
+type state = {|
   clicked: boolean,
 |};
 
-class ReactClass extends Component<PropsType, StateType> {
-  props: PropsType;
-
-  state: StateType = {
+class ReactClass extends Component<props, state> {
+  state: state = {
     clicked: false,
   };
-
-  someInternalThing: boolean;
-  someOtherInternalThing = true;
-
-  constructor(props: PropsType) {
-    super(props);
-  }
 
   componentDidMount() {
     if (this.props.onMount) {
@@ -34,7 +25,10 @@ class ReactClass extends Component<PropsType, StateType> {
     }
   }
 
-  handleClick: EventCallbackType = (event: SyntheticEvent<*>) => {
+  someInternalThing: boolean;
+  someOtherInternalThing = true;
+
+  handleClick: eventCallback = (event: SyntheticEvent<*>) => {
     event.preventDefault();
 
     this.setState({ clicked: true });
