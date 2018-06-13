@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-i-am-meticulous",
-  "version": "9.0.1",
+  "version": "10.0.0",
   "description": "An ESLint shareable config for meticulous people.",
   "keywords": [
     "eslint",

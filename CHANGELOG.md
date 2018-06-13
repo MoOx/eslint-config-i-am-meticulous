@@ -1,3 +1,9 @@
+# 10.0.0 - 2018-06-13
+
+- several too brutal react(-native) rules disabled
+- `"react/jsx-boolean-value"` on to match ReasonReact style
+- `"react/no-this-in-sfc"` on
+
 # 9.0.1 - 2018-06-07
 
 - Bump dep/devDeps to ensure compat with rules
@@ -14,8 +20,10 @@
 - (`flowtype/no-unused-expressions`) Avoid keeping unused type annotations
 - (`flowtype/type-id-match`) Remove type naming restriction
 - (`flowtype/no-mutable-array`) Disallow `Array` in favor of `$ReadOnlyArray`
-- (`flowtype/require-exact-type`) Disallow inexact object types (`{| |}` notation is required).
-- (`react/sort-comp`) Allow type annotations and instance variables at the top of React class components
+- (`flowtype/require-exact-type`) Disallow inexact object types (`{| |}`
+  notation is required).
+- (`react/sort-comp`) Allow type annotations and instance variables at the top
+  of React class components
 
 # 7.0.1 - 2017-09-06
 
@@ -25,20 +33,22 @@
 
 - Eslint 4+
 - Updated all plugins with new (undefined) rules (some on, some off)
-- Globals to prevent "no-undef" with Flow ([ref](https://github.com/gajus/eslint-plugin-flowtype/issues/261))
+- Globals to prevent "no-undef" with Flow
+  ([ref](https://github.com/gajus/eslint-plugin-flowtype/issues/261))
 
 # 6.0.1 - 2017-04-19
 
-- Relaxed: `flowtype/type-id-match` is less strict.
-  It accepts lowercase for the first letter (eg: for function type)
+- Relaxed: `flowtype/type-id-match` is less strict. It accepts lowercase for the
+  first letter (eg: for function type)
 
 # 6.0.0 - 2017-03-23
 
-- Removed: all rules directly related to code styles have been removed.
-  **We recommend you to use [prettier](https://github.com/prettier/prettier).**
+- Removed: all rules directly related to code styles have been removed. **We
+  recommend you to use [prettier](https://github.com/prettier/prettier).**
 - Changed: eslint `ecmaVersion` set to `2017`
 - Added: some rules for flow
-  ([7a36807](https://github.com/MoOx/eslint-config-i-am-meticulous/commit/7a36807f5b0016fd5fefdb880c7e667b13202c54) &
+  ([7a36807](https://github.com/MoOx/eslint-config-i-am-meticulous/commit/7a36807f5b0016fd5fefdb880c7e667b13202c54)
+  &
   [98c6bae](https://github.com/MoOx/eslint-config-i-am-meticulous/commit/98c6bae6b38b77143c78b4ccd74e9b508fdf3dd8))
 
 # 5.0.2 - 2016-09-24
@@ -55,10 +65,12 @@
 - Added: lot of missings rules related to package updates (mainly for react)
   - eslint-plugin-react@6
   - eslint-plugin-ava@3
-- Added: [`eslint-plugin-import`](https://github.com/benmosher/eslint-plugin-import)
-  is now included in the default config.
-  All rules are on except `no-nodejs-modules` which depends on the env.
-- Added: [`react/jsx-first-prop-new-line`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md)
+- Added:
+  [`eslint-plugin-import`](https://github.com/benmosher/eslint-plugin-import) is
+  now included in the default config. All rules are on except
+  `no-nodejs-modules` which depends on the env.
+- Added:
+  [`react/jsx-first-prop-new-line`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md)
   with `multiline` value to enforce first prop on a new line if there is
   multiple props.  
   The following patterns are now considered warnings:
@@ -78,11 +90,13 @@
   />
   ```
 
-- Added: [`react/jsx-no-target-blank`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md).
+- Added:
+  [`react/jsx-no-target-blank`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md).
   This rules requires that you accompany all `target='_blank'` attributes with
   `rel='noreferrer noopener'`
   [for security reasons](https://mathiasbynens.github.io/rel-noopener/).
-- Added: [`eslint-plugin-react-native`](https://github.com/Intellicode/eslint-plugin-react-native)
+- Added:
+  [`eslint-plugin-react-native`](https://github.com/Intellicode/eslint-plugin-react-native)
   available as `eslint-config-i-am-meticulous/react-native`.
 
 # 4.2.1 - 2016-04-12
@@ -97,9 +111,9 @@
 
 # 4.1.0 - 2016-03-25
 
-- Added: react-flow preset.
-  Flow support for props and state property initializers at the top of React
-  classes (so "react/sort-comp" as been adjusted).
+- Added: react-flow preset. Flow support for props and state property
+  initializers at the top of React classes (so "react/sort-comp" as been
+  adjusted).
 
 # 4.0.0 - 2016-03-23
 
