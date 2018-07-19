@@ -1,3 +1,7 @@
+# 11.0.0 - 2018-07-19
+
+- Switch to eslint 5
+
 # 10.0.0 - 2018-06-13
 
 - several too brutal react(-native) rules disabled
