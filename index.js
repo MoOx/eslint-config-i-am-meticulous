@@ -3,16 +3,13 @@ module.exports = {
   extends: "eslint:recommended",
 
   parserOptions: {
-    ecmaVersion: 2017,
+    ecmaVersion: 2018,
     sourceType: "module",
-    ecmaFeatures: {
-      experimentalObjectRestSpread: true
-    }
   },
   env: {
     node: true,
     browser: true,
-    es6: true
+    es6: true,
   },
 
   plugins: ["import"],
@@ -64,7 +61,7 @@ module.exports = {
     "import/no-cycle": 0,
     "import/no-default-export": 0, // stupid
     "import/no-self-import": 2,
-    "import/no-useless-path-segments": 2
+    "import/no-useless-path-segments": 2,
   },
 
   settings: {
@@ -72,7 +69,7 @@ module.exports = {
       "node_modules", // mostly CommonJS (ignored by default)
       ".json$", // import plugin does not seems to like json
       ".(css|scss|less)$", // can't parse unprocessed CSS
-      ".(jpg|png|gif|svg|html|txt|md|woff|woff2|ttf|eot)$" // webpack !
-    ]
-  }
+      ".(jpg|png|gif|svg|html|txt|md|woff|woff2|ttf|eot)$", // webpack !
+    ],
+  },
 };
