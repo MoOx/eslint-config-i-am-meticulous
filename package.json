@@ -23,7 +23,6 @@
     "flow.js",
     "react-flow.js",
     "react-native.js",
-    "ava.js",
     "es5.js"
   ],
   "dependencies": {
@@ -33,7 +32,6 @@
     "babel-eslint": "^8.2.1",
     "eslint": "^5.1.0",
     "eslint-find-rules": "^3.1.1",
-    "eslint-plugin-ava": "^4.2.2",
     "eslint-plugin-flowtype": "^2.49.3",
     "eslint-plugin-react": "^7.9.1",
     "eslint-plugin-react-native": "^3.2.1",
@@ -54,7 +52,6 @@
     "check-update:react": "eslint-find-rules -u ./react.js",
     "check-update:react-native": "eslint-find-rules -u ./react-native.js",
     "check-update:flow": "eslint-find-rules -u ./flow.js",
-    "check-update:ava": "eslint-find-rules -u ./ava.js",
     "check-update": "npm-run-all --parallel check-update:*",
     "lint:config": "eslint -c index.js \"*.js\"",
     "lint:index": "eslint -c index.js __tests__/index.js",
@@ -62,7 +59,6 @@
     "lint:react-native": "eslint -c react-native.js __tests__/react-fn.js __tests__/react-class.js",
     "lint:flow": "eslint -c flow.js __tests__/flow.js interfaces/Something.d.js && flow __tests__/flow.js",
     "lint:react-flow": "eslint -c react-flow.js __tests__/react-class-flow.js",
-    "lint:ava": "eslint -c ava.js __tests__/ava.js",
     "lint": "npm-run-all --parallel lint:*",
     "test": "npm run -s lint && npm run -s check-update",
     "release": "npmpub",

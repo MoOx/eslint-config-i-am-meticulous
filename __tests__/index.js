@@ -1,4 +1,4 @@
-import something from "eslint-plugin-ava";
+import something from "eslint-plugin-flowtype";
 import somethingElse from "eslint-plugin-react";
 
 if (typeof window !== "undefined") {

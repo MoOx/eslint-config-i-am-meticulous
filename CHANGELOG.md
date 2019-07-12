@@ -1,3 +1,5 @@
+- Removed ava
+
 # 11.0.0 - 2018-07-19
 
 - Switch to eslint 5
@@ -78,6 +80,7 @@
   with `multiline` value to enforce first prop on a new line if there is
   multiple props.  
   The following patterns are now considered warnings:
+  multiple props. The following patterns are now considered warnings:
 
   ```js
   <Hello personal prop />
