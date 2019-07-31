@@ -1,4 +1,5 @@
 - Removed ava
+- Remove some old Synthetic\* globals for flow/react-native
 
 # 11.0.0 - 2018-07-19
 
@@ -78,9 +79,8 @@
 - Added:
   [`react/jsx-first-prop-new-line`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md)
   with `multiline` value to enforce first prop on a new line if there is
-  multiple props.  
-  The following patterns are now considered warnings:
-  multiple props. The following patterns are now considered warnings:
+  multiple props. The following patterns are now considered warnings: multiple
+  props. The following patterns are now considered warnings:
 
   ```js
   <Hello personal prop />

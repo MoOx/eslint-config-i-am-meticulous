@@ -17,7 +17,6 @@
   ],
   "main": "index.js",
   "files": [
-    "_flow-globals.js",
     "index.js",
     "react.js",
     "flow.js",

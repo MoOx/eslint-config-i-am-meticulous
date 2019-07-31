@@ -3,7 +3,7 @@ module.exports = {
 
   plugins: ["flowtype"],
 
-  extends: ["./index.js", "./_flow-globals.js"],
+  extends: ["./index.js"],
 
   rules: {
     // avoid false positive eslint errors

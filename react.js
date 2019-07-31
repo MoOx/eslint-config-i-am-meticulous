@@ -3,7 +3,7 @@ module.exports = {
 
   plugins: ["react"],
 
-  extends: ["./index.js", "./_flow-globals.js"],
+  extends: ["./index.js"],
 
   parserOptions: {
     ecmaFeatures: {
