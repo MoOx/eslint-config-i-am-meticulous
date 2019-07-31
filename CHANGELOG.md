@@ -1,5 +1,6 @@
 - Removed ava
 - Remove some old Synthetic\* globals for flow/react-native
+- Remove all non error rules
 
 # 11.0.0 - 2018-07-19
 

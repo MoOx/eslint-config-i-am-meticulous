@@ -16,35 +16,5 @@ module.exports = {
     "flowtype/no-unused-expressions": 2,
     "flowtype/no-mutable-array": 2,
     "flowtype/require-exact-type": 2,
-
-    // too brutal
-    "flowtype/type-id-match": 0,
-    "flowtype/no-types-missing-file-annotation": 0, // what about flow 'all' option?
-    "flowtype/no-weak-types": 0,
-    "flowtype/require-parameter-type": 0,
-    "flowtype/require-return-type": 0,
-    "flowtype/require-valid-file-annotation": 0,
-    "flowtype/require-variable-type": 0,
-    "flowtype/sort-keys": 0,
-    "flowtype/no-flow-fix-me-comments": 0,
-    "flowtype/array-style-complex-type": 0,
-    "flowtype/array-style-simple-type": 0,
-    "flowtype/no-existential-type": 0,
-    "flowtype/require-types-at-top": 0,
-    "flowtype/type-import-style": 0,
-
-    // no styles rules (=> prettier)
-    "flowtype/newline-after-flow-annotation": 0,
-    "flowtype/semi": 0,
-    "flowtype/delimiter-dangle": 0,
-    "flowtype/object-type-delimiter": 0,
-    "flowtype/generic-spacing": 0,
-    "flowtype/space-after-type-colon": 0,
-    "flowtype/space-before-generic-bracket": 0,
-    "flowtype/space-before-type-colon": 0,
-    "flowtype/union-intersection-spacing": 0,
-
-    // deprecated
-    "flowtype/valid-syntax": 0
-  }
+  },
 };
