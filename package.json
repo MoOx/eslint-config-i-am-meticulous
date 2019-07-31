@@ -31,7 +31,6 @@
   "devDependencies": {
     "babel-eslint": "^8.2.1",
     "eslint": "^5.1.0",
-    "eslint-find-rules": "^3.1.1",
     "eslint-plugin-flowtype": "^2.49.3",
     "eslint-plugin-react": "^7.9.1",
     "eslint-plugin-react-native": "^3.2.1",
@@ -48,11 +47,6 @@
   },
   "scripts": {
     "precommit": "pretty-quick --staged",
-    "check-update:index": "eslint-find-rules -u ./index.js",
-    "check-update:react": "eslint-find-rules -u ./react.js",
-    "check-update:react-native": "eslint-find-rules -u ./react-native.js",
-    "check-update:flow": "eslint-find-rules -u ./flow.js",
-    "check-update": "npm-run-all --parallel check-update:*",
     "lint:config": "eslint -c index.js \"*.js\"",
     "lint:index": "eslint -c index.js __tests__/index.js",
     "lint:react": "eslint -c react.js __tests__/react-fn.js __tests__/react-class.js",
@@ -60,7 +54,7 @@
     "lint:flow": "eslint -c flow.js __tests__/flow.js interfaces/Something.d.js && flow __tests__/flow.js",
     "lint:react-flow": "eslint -c react-flow.js __tests__/react-class-flow.js",
     "lint": "npm-run-all --parallel lint:*",
-    "test": "npm run -s lint && npm run -s check-update",
+    "test": "npm run -s lint",
     "release": "npmpub",
     "format": "prettier --write --trailing-comma=all \"*.js\" \"!(node_modules)/*.js\""
   }
