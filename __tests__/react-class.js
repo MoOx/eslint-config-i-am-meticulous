@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Stylesheet } from "react-native";
+import type { SyntheticEvent } from "react-native/Libraries/Types/CoreEventTypes.js";
 
 class ReactClass extends Component {
   static propTypes = {
