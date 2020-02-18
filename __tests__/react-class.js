@@ -31,7 +31,6 @@ class ReactClass extends Component {
 
   render() {
     return (
-      // eslint-disable-next-line react-native/no-inline-styles
       <div onClick={this.handleClick} style={{ color: "blue" }}>
         {!this.state.clicked ? "Hi" : "Hey"}
         {this.state.clicked && <div style={styles.test} />}

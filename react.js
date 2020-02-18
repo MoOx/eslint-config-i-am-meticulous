@@ -44,4 +44,10 @@ module.exports = {
     "react/style-prop-object": 2,
     "react/wrap-multilines": 0, // deprecated
   },
+
+  settings: {
+    react: {
+      version: "detect",
+    }
+  },
 };
